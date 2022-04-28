@@ -2,7 +2,7 @@ package com.example.belajarmvp
 
 interface IMainView {
 
-    fun showResult(hasil: Int)
+    fun hasilJumlah(hasil: Int)
 
     fun clearField()
 

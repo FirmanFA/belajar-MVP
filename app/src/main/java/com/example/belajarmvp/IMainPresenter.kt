@@ -2,8 +2,8 @@ package com.example.belajarmvp
 
 interface IMainPresenter {
 
-    fun countResult(bilangan: Bilangan)
+    fun penjumlahan(bilangan: Bilangan)
 
-    fun pengurangan(message: String)
+    fun pengurangan(bilangan: Bilangan)
 
 }

@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity(), IMainView {
             val bil1 = etBil1.text.toString().toInt()
             val bil2 = etBil2.text.toString().toInt()
             val bilangan = Bilangan(bil1,bil2)
-            mainPresenterImp.countResult(bilangan)
-            mainPresenterImp.pengurangan((bil1-bil2).toString())
+            mainPresenterImp.penjumlahan(bilangan)
+            mainPresenterImp.pengurangan(bilangan)
         }
 
     }
 
-    override fun showResult(hasil: Int) {
+    override fun hasilJumlah(hasil: Int) {
         val tvHasil = findViewById<TextView>(R.id.textView)
         tvHasil.text = "Hasil: $hasil"
     }
